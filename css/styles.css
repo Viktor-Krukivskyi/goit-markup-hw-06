@@ -876,6 +876,7 @@ letter-spacing: 0.03em;
     margin-top: 12px;
 }
 
+
 .form-comment {
     width: 100%;
     padding: 12px;
@@ -883,7 +884,9 @@ letter-spacing: 0.03em;
     border-radius: 4px;
     height: 120px;
     resize: none;
-    
+}
+.form-comment:focus {
+    border-color: var(--color-inverted);
 }
 .form-control {
     position: relative;
