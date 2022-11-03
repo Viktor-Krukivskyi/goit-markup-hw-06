@@ -58,7 +58,7 @@ ul {
     padding-bottom: 94px;
 }
     
-.container-nav {
+.nav {
 display: flex;
 align-items: center;
 }
@@ -603,6 +603,7 @@ text-decoration: none;
     display: flex;
     font-size: 14px;
     text-transform: uppercase;
+    line-height: 16px;
     color: var(--color-white);
     margin-bottom: 20px;
 }
@@ -641,8 +642,10 @@ text-decoration: none;
     display: flex;
     font-size: 14px;
     text-transform: uppercase;
+    line-height: 16px;
     color: var(--color-white);
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+
 }
 .input-box {
     display: flex;
@@ -830,6 +833,7 @@ letter-spacing: 0.03em;
     height: 581px;
     background-color: var(--color-white);
     border-radius: 4px;
+    padding: 40px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--color-time);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -857,7 +861,6 @@ letter-spacing: 0.03em;
     transition: color 250ms var(--color-time);
 }
 .text-contact {
-    margin-top: 40px;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -869,8 +872,7 @@ letter-spacing: 0.03em;
     display: block;
     font-size: 12px;
     line-height: 1.6;
-    margin-bottom: 4px;
-    margin-left: 41px; 
+    margin-bottom: 4px; 
     margin-top: 12px;
 }
 
@@ -885,9 +887,7 @@ letter-spacing: 0.03em;
 }
 .form-control {
     position: relative;
-   margin-left: 41px;
-   margin-right: 41px;
-   
+
 }
 .form-input {
     width: 100%;
@@ -912,10 +912,12 @@ letter-spacing: 0.03em;
 .checkbox-input{
 appearance: none;
 }
+
 .checkbox-label {
+    display: flex;
     position: relative;
     padding-left: 28px;
-    margin: 54px;
+    
 }
 .checkbox-label::before {
 position: absolute;
@@ -927,6 +929,7 @@ height: 15px;
 border: 1px solid var(--color-primary);
 border-radius: 2px;
 }
+
 .checkbox-label::after {
     position: absolute;
     content: '';
@@ -941,7 +944,9 @@ border-radius: 2px;
 }
 .checkbox-input:checked + .checkbox-label::after {
     opacity: 1;
+    border: none
 }
+
 .visually-hidden {
 position: absolute;
 white-space: nowrap;
