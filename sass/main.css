@@ -1,0 +1,207 @@
+:root {
+  --color-primary: #212121;
+  --color-secondary: #757575;
+  --color-background: #2f303a;
+  --color-background-box1: #f5f5f5;
+  --color-background-box2: #f5f4fA;
+  --color-inverted: #2196f3;
+  --color-white: #fff;
+  --shadow-btn-color: rgba(0, 0, 0, 0.15);
+  --border-color: #eeeeee;
+  --color-icon: #afb1b8;
+  --color-time: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-primary);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border: 1px solid #ececec;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-accent {
+  color: var(--color-inverted);
+}
+
+.header__logo-accent:hover {
+  color: var(--color-inverted);
+}
+
+.header__logo-accent:focus {
+  color: var(--color-inverted);
+}
+
+.header__logo-menu {
+  color: var(--color-primary);
+}
+
+.menu.current {
+  color: var(--color-inverted);
+}
+
+.header__logo-footer-menu :focus {
+  color: var(--color-inverted);
+}
+
+.header__logo-header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.header__logo-header:hover {
+  color: var(--color-white);
+  background-color: var(--color-white);
+}
+
+.header__logo-header:focus {
+  background-color: var(--color-white);
+}
+
+.header__list-menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.header__logo-nav {
+  list-style: none;
+  display: flex;
+  gap: 93px;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header__menu {
+  color: var(--color-primary);
+  position: relative;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms var(--color-time);
+}
+
+.header__menu--current::after {
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-inverted);
+  content: "";
+  border-radius: 2px;
+}
+
+.header__menu:hover {
+  color: var(--color-inverted);
+}
+
+.header__menu:focus {
+  color: var(--color-inverted);
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  font-size: 14px;
+  text-decoration: none;
+  gap: 10px;
+  transition: color 250ms var(--color-time);
+}
+
+.mail:hover {
+  color: var(--color-inverted);
+}
+
+.mail:focus {
+  color: var(--color-inverted);
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  gap: 10px;
+  transition: color 250ms var(--color-time);
+}
+
+.tel:hover {
+  color: var(--color-inverted);
+}
+
+.tel:focus {
+  color: var(--color-inverted);
+}
+
+.contact-icon {
+  fill: currentColor;
+}/*# sourceMappingURL=main.css.map */
